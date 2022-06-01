@@ -14,3 +14,19 @@
 * **JavaScript;**
 * **Figma;**
 * **WebStorm, VSCode;**
+## Code examples:
+```
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', burger)
+
+function burger(){
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+}
+```
+
+## Experience:
+Don't have experience yet
+
