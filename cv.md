@@ -9,3 +9,8 @@
     + Economist, audit (completed)
 * **The Rolling Scopes**
     + Front-end/ JavaScript developer (in process)
+## Skills:
+* **HTML, CSS (SCSS, SASS);**
+* **JavaScript;**
+* **Figma;**
+* **WebStorm, VSCode;**
