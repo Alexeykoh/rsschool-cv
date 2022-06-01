@@ -26,7 +26,6 @@ function burger(){
     navMenu.classList.toggle('active');
 }
 ```
-
 ## Experience:
 Don't have experience yet
 
