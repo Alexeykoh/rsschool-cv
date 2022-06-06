@@ -1,0 +1,32 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+//font-family: 'Aleo', serif;
+//font-family: 'Magra', sans-serif;
+//font-family: 'Red Hat Text', sans-serif;
+$primary-font: 'Aleo', serif;
+$second-font: 'Magra', sans-serif;
+$third-font: 'Red Hat Text', sans-serif;
+
+$logo-font: 'Magra', sans-serif;
+
+// container
+$cont_max-width     : 1440px;
+$cont_padding-left  : 120px;
+$cont_padding-right : 120px;
+
+$content-width      : 1280px - 1px;
+$tablet-width       : 768px - 1px;
+$mobile-big-width   : 425px - 1px;
+$mobile-small-width : 320px - 1px;
+
+// sizes
+$header_height      : 5.625rem;
+
+// =========
+//colors
+$color-primary      : #F2785C;
+$color-secondary    : #0D606F;
+
+$color-white        : #fff;
+$color-black        : #000;

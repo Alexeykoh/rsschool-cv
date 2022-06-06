@@ -1,0 +1,23 @@
+button {
+	background      : #0D606F;
+	box-shadow      : 0 4px 4px rgba(0, 0, 0, 0.25), 0 2px 3px rgba(13, 96, 111, 0.16);
+	border-radius   : 10px;
+	padding         : 10px 30px;
+	color           : white;
+	//
+	font-family     : "Red Hat Text", sans-serif;
+	font-style      : normal;
+	font-weight     : 400;
+	border          : none;
+	line-height     : 21px;
+	
+	&:active {
+		background : #17a3bd;
+	}
+	
+	//
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	gap             : 10px;
+}
