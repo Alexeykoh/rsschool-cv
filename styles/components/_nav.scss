@@ -1,0 +1,14 @@
+nav {
+	display         : flex;
+	flex-direction  : row;
+	justify-content : space-between;
+	//
+	font-size       : 1.5rem;
+	color           : black;
+	//
+	.nav__manu {
+		display        : flex;
+		flex-direction : row;
+		gap            : 30px;
+	}
+}

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 *,
 *::after,
 *::before {
@@ -9,6 +10,7 @@
 
 html {
   background-color: white;
+  font-family: "Comfortaa", cursive;
 }
 
 body {
@@ -40,6 +42,7 @@ img {
   max-width: 1440px;
   padding-left: 120px;
   padding-right: 120px;
+  margin: 0 auto;
 }
 
 .grid {
@@ -77,15 +80,43 @@ button:active {
   background: #17a3bd;
 }
 
-button.top__button {
+span.top__span {
+  display: none;
+}
+
+span.top__span.active {
+  display: block;
   position: fixed;
   bottom: 5rem;
   right: 5rem;
-  border-radius: 150px;
+}
+span.top__span.active button {
   width: 60px;
   height: 60px;
+  position: relative;
+  border-radius: 100%;
   background: none;
-  border: solid black;
+}
+span.top__span.active button:active {
+  background: #17a3bd;
+}
+span.top__span.active button img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  color: black;
+}
+nav .nav__manu {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

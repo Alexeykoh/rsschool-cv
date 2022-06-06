@@ -1,10 +1,27 @@
-button.top__button{
+span.top__span{
+	display: none;
+}
+span.top__span.active{
+	display: block;
 	position : fixed;
 	bottom: 5rem;
-	right : 5rem;
-	border-radius: 150px;
-	width : 60px;
-	height : 60px;
-	background: none;
-	border: solid black;
+	right: 5rem;
+	//
+	button{
+		width : 60px;
+		height : 60px;
+		position: relative;
+		//
+		border-radius: 100%;
+		background: none;
+		&:active {
+			background : #17a3bd;
+		}
+		img{
+			position: absolute;
+			width : 50px;
+			height : 50px;
+		}
+	}
 }
+

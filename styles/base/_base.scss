@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+//font-family: 'Comfortaa', cursive;
 *,
 *::after,
 *::before {
-	margin: 0;
-	padding: 0;
+	margin  : 0;
+	padding : 0;
 }
 
-html{
-	background-color: white;
+html {
+	background-color : white;
+	font-family: 'Comfortaa', cursive
 }
 
 body {
-	box-sizing: border-box;
+	box-sizing : border-box;
 }
 
 a {
@@ -21,39 +24,40 @@ ol, ul {
 	list-style : none;
 }
 
-button{
-	cursor: pointer;
+button {
+	cursor : pointer;
 }
 
-img{
-	max-width: 100%;
-	height : auto;
+img {
+	max-width : 100%;
+	height    : auto;
 }
 
 // hidden elements
-.hidden{
-	display: none;
+.hidden {
+	display : none;
 }
 
 // container
-.container{
+.container {
 	max-width     : 1440px;
 	padding-left  : 120px;
 	padding-right : 120px;
+	margin        : 0 auto;
 }
 
-.grid{
-	display: grid;
+.grid {
+	display : grid;
 }
 
-h1,h2,h3,h4{
-	padding: 0;
-	margin : 0;
+h1, h2, h3, h4 {
+	padding : 0;
+	margin  : 0;
 }
 
 
-p{
-	font-size: 1.25rem;
-	font-family: 'Aleo', serif;
-	color: white;
+p {
+	font-size   : 1.25rem;
+	font-family : "Aleo", serif;
+	color       : white;
 }
