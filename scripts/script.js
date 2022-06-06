@@ -31,3 +31,15 @@ function topScroll () {
 }
 
 document.querySelector('.top__span').addEventListener('click', topScroll)
+
+
+//burger
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav__menu');
+
+hamburger.addEventListener('click', burger)
+
+function burger(){
+	hamburger.classList.toggle('active');
+	navMenu.classList.toggle('active');
+}

@@ -2,6 +2,17 @@ span.top__span{
 	display: none;
 }
 span.top__span.active{
+	animation : showLBot .4s;
+	@keyframes showLBot {
+		from {
+			right : -100%;
+			opacity: 0;
+		}
+		to {
+			right: 5rem;
+			opacity: 100;
+		}
+	}
 	display: block;
 	position : fixed;
 	bottom: 5rem;

@@ -1,12 +1,33 @@
-nav {
+.nav {
 	display         : flex;
 	flex-direction  : row;
 	justify-content : space-between;
 	//
 	font-size       : 1.5rem;
-	color           : black;
 	//
-	.nav__manu {
+	.nav__link{
+		color           : black;
+	}
+	//
+	.nav__menu {
+		display        : flex;
+		flex-direction : row;
+		gap            : 30px;
+	}
+}
+
+.nav__menu.active {
+	display         : flex;
+	flex-direction  : column;
+	justify-content : space-between;
+	//
+	font-size       : 1.5rem;
+	//
+	.nav__link{
+		color           : black;
+	}
+	//
+	.nav__menu {
 		display        : flex;
 		flex-direction : row;
 		gap            : 30px;
