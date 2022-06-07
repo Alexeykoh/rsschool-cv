@@ -1,0 +1,138 @@
+main {
+	section.about {
+		width            : 100%;
+		height           : 100vh;
+		background-color : var(--color-secondary);
+		//
+		.container {
+			height          : 100%;
+			display         : flex;
+			align-items     : center;
+			justify-content : space-around;
+			gap : 50px;
+			flex-wrap: wrap;
+		}
+		
+		//
+		.about__inner {
+			display        : flex;
+			flex-direction : column;
+			gap            : 15px;
+			align-items    : center;
+			button{
+				transition: .3s;
+				&:hover{
+					p{
+						display: block;
+						opacity: 100;
+					}
+				}
+				p{
+					font-size: 1.2rem;
+					display: none;
+					opacity: 0;
+				}
+				img{
+					width : 30px;
+					height : auto;
+				}
+			}
+		}
+		
+		//
+		.about__subscription {
+			width : 55%;
+			//
+			@include adaptive-font(32, 16);
+		}
+		
+		//
+		.avatar {
+			width           : 400px;
+			height          : 400px;
+			overflow        : hidden;
+			border-radius   : 50% 50% 60% 40% / 32% 70% 30% 68%;
+			//
+			display         : flex;
+			align-items     : center;
+			justify-content : center;
+			//
+			img.avatar__img {
+				width  : 650px;
+				height : auto;
+			}
+		}
+	}
+	
+	//
+	section.skills {
+		width            : 100%;
+		height           : 100vh;
+		background-color : var(--color-primary);
+	}
+	
+	//
+	section.projects {
+		width            : 100%;
+		height           : 200vh;
+		background-color : var(--color-secondary);
+	}
+	
+	//
+	section.education {
+		width            : 100%;
+		height           : 100vh;
+		background-color : var(--color-primary);
+	}
+	
+	//
+	section.code-examples {
+		width            : 100%;
+		height           : 100vh;
+		background-color : var(--color-secondary);
+	}
+	
+	//
+	section.contacts {
+		width            : 100%;
+		height           : 50vh;
+		background-color : var(--color-primary);
+		//
+		h2 {
+			font-size : 5rem;
+		}
+		
+		.container {
+			display         : flex;
+			justify-content : space-around;
+			align-items     : center;
+			height          : 100%;
+			flex-wrap       : wrap;
+		}
+		
+		//
+		.contacts__inner {
+			display         : flex;
+			flex-direction  : column;
+			align-items     : start;
+			justify-content : start;
+			gap             : 20px;
+		}
+		
+		//
+		.contact__wrapper, .contact__title {
+			display     : flex;
+			align-items : center;
+		}
+		
+		.contact__title {
+			gap   : 5px;
+			width : 10rem;
+		}
+		
+		.contact__wrapper {
+			gap : 15px;
+		}
+		
+	}
+}

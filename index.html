@@ -13,12 +13,23 @@
 <body>
 
 <header class="header" id="header">
-	<span class="top__span"><button class="top__button">
-		<img src="assets/ico/top-ico.svg" alt="tom-ico" class="top__button__ico">
-	</button></span>
+	<span class="top__span">
+		<button class="top__button">
+			<img src="assets/ico/top-ico.svg" alt="tom-ico" class="top__button__ico ico">
+		</button>
+	</span>
 	<div class="container">
 		<nav class="nav">
-			<span class="theme__toggle">theme</span>
+			<span class="theme__toggle">
+<!--				<img src="assets/ico/light_mod-ico.svg" alt="" class="theme__button">-->
+				<span class="theme-switch-wrapper">
+					<label class="theme-switch" for="checkbox">
+						<input type="checkbox" id="checkbox"/>
+						<span class="slider round"></span>
+					</label>
+				</span>
+			</span>
+			
 			<ul class="nav__menu">
 				<li class="nav__item"><a href="#skills" class="nav__link">skills</a></li>
 				<li class="nav__item"><a href="#projects" class="nav__link">projects</a></li>
@@ -38,12 +49,17 @@
 <main>
 	<section class="about">
 		<div class="container">
-			<div class="avatar">
-				<img src="" alt="" class="avatar__img">
+			<div class="about__inner">
+				<div class="avatar">
+					<img src="assets/img/avatar.jpg" alt="" class="avatar__img">
+				</div>
+				<h1 class="about__name title">Alexey <span>Kokhanovich</span></h1>
+				<h2 class="subtitle">Front-End Developer</h2>
+				<button class="button__email-me">
+					<img src="assets/ico/mailme-ico.svg" alt="mailme-ico" class="mailme-img ico">
+					<p>mail me</p>
+				</button>
 			</div>
-			<h1 class="about__name title">Alexey <span>Kokhanovich</span></h1>
-			<h2 class="subtitle">Front-End Developer</h2>
-			<button class="button__email-me">email me</button>
 			<p class="about__subscription">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur consequatur dignissimos
 				distinctio dolorem eius eveniet facilis, fuga id nam, nihil nisi obcaecati omnis quasi quisquam quos
@@ -142,41 +158,65 @@
 	<section class="contacts" id="contacts">
 		<div class="container">
 			<h2 class="tittle">My contacts</h2>
-			<div class="contact__wrapper">
-				<div class="contact__title">
-					<img src="" alt="contact-ico" class="contact__ico">
-					<p>Phone</p>
+			<div class="contacts__inner">
+				<div class="contact__wrapper">
+					<div class="contact__title">
+						<img src="assets/ico/phone-ico.svg" alt="contact-ico" class="contact__ico ico">
+						<p>Phone</p>
+					</div>
+					<div class="contact__description">
+						<p>+375255449468</p>
+					</div>
 				</div>
-				<div class="contact__description">
-					<img src="" alt="contact-ico" class="contact__ico">
-					<p>+375255449468</p>
+				<div class="contact__wrapper">
+					<div class="contact__title">
+						<img src="assets/ico/adress-ico.svg" alt="contact-ico" class="contact__ico ico">
+						<p>Address</p>
+					</div>
+					<div class="contact__description"><p>Republic of Belarus. Mogilev</p></div>
 				</div>
-			</div>
-			<div class="contact__wrapper">
-				<div class="contact__title">
-					<img src="" alt="contact-ico" class="contact__ico">
-					<p>Address</p>
+				<div class="contact__wrapper">
+					<div class="contact__title">
+						<img src="assets/ico/mail-ico.svg" alt="contact-ico" class="contact__ico ico">
+						<p>E-mail</p>
+					</div>
+					<div class="contact__description"><p>alexeykoh@icloud.com</p></div>
 				</div>
-				<div class="contact__description"><p>Republic of Belarus. Mogilev</p></div>
-			</div>
-			<div class="contact__wrapper">
-				<div class="contact__title">
-					<img src="" alt="contact-ico" class="contact__ico">
-					<p>E-mail</p>
+				<div class="contact__wrapper">
+					<div class="contact__title">
+						<img src="assets/ico/git-ico.svg" alt="contact-ico" class="contact__ico ico">
+						<p>GitHub</p>
+					</div>
+					<div class="contact__description"><p>GitHub Account</p></div>
 				</div>
-				<div class="contact__description"><p>alexeykoh@icloud.com</p></div>
-			</div>
-			<div class="contact__wrapper">
-				<div class="contact__title">
-					<img src="" alt="contact-ico" class="contact__ico">
-					<p>GitHub</p>
-				</div>
-				<div class="contact__description"><p>GitHub Account</p></div>
 			</div>
 		</div>
 	</section>
 
 </main>
+
+<footer class="footer" id="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__block">
+				<a href="https://github.com/Alexeykoh?tab=repositories" class="footer__link">
+					<img src="assets/ico/git-ico.svg" alt="" class="ico">
+				</a>
+			</div>
+			<div class="footer__block">
+				<img src="assets/ico/calendar-ico.svg" alt="" class="footer__img ico">
+				<p>2022</p>
+			</div>
+			<div class="footer__block">
+				<a href="https://rs.school/js/" class="footer__link">
+					<img src="assets/ico/rs_school_js.svg" alt="" class="footer__img ico" id="rss-ico">
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
 <script src="scripts/script.js"></script>
+
 </body>
 </html>
