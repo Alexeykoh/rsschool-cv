@@ -69,4 +69,10 @@ function switchTheme(e) {
 
 toggleSwitch.addEventListener('change', switchTheme, false);
 
+// mail me
+let mailMe = document.querySelector('.button__email-me')
+mailMe.addEventListener('click', sendMail)
 
+function sendMail () {
+	window.open('mailto:alexeykoh@icloud.com?subject=Hi, front-end developer!&body=I am glad to say that I liked your portfolio and I am ready to discuss the work with you.');
+}
