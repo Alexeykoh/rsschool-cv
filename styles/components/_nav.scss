@@ -2,7 +2,7 @@
 	display         : flex;
 	flex-direction  : row;
 	justify-content : space-between;
-	align-items: center;
+	align-items     : center;
 	//
 	font-size       : 1.5rem;
 	//
@@ -23,9 +23,9 @@
 }
 
 .nav__menu.active {
-	flex-direction  : column;
+	flex-direction : column;
 	//
-	font-size       : 1.5rem;
+	font-size      : 1.5rem;
 	//
 	
 	//
@@ -39,68 +39,72 @@
 
 /*slider switch css */
 .theme-switch-wrapper {
-	display: flex;
-	align-items: center;
+	display     : flex;
+	align-items : center;
 	
 	em {
-		margin-left: 10px;
-		font-size: 1rem;
+		margin-left : 10px;
+		font-size   : 1rem;
 	}
 }
+
 .theme-switch {
-	display: inline-block;
-	height: 34px;
-	position: relative;
-	width: 60px;
+	display  : inline-block;
+	height   : 34px;
+	position : relative;
+	width    : 60px;
 }
 
 .theme-switch input {
-	display:none;
+	display : none;
 }
 
 .slider {
-	background-color: #AC7762;
-	bottom: 0;
-	cursor: pointer;
-	left: 0;
-	position: absolute;
-	right: 0;
-	top: 0;
-	transition: .4s;
+	background-color : white;
+	bottom           : 0;
+	cursor           : pointer;
+	left             : 0;
+	position         : absolute;
+	right            : 0;
+	top              : 0;
+	transition       : .4s;
 	//
-
+	
 }
 
+
 .slider:before {
-	bottom: 4px;
-	content: "";
-	height: 26px;
-	left: 4px;
-	position: absolute;
-	transition: .4s;
-	width: 26px;
+	bottom           : 4px;
+	content          : "";
+	height           : 26px;
+	left             : 4px;
+	position         : absolute;
+	transition       : .4s;
+	width            : 26px;
 	//
-	background-image: url("../../assets/ico/light_mod-ico.svg");
-	background-size: contain;
+	background-image : url("../../assets/ico/light_mod-ico.svg");
+	background-size  : contain;
+	//
 }
 
 input:checked + .slider {
-	background-color: goldenrod;
+	background-color : #051937;
 }
 
 input:checked + .slider:before {
-	transform: translateX(26px);
-	background-image: url("../../assets/ico/dark_mod-ico.svg");
-	background-size: contain;
+	transform        : translateX(26px);
+	background-image : url("../../assets/ico/dark_mod-ico.svg");
+	background-size  : contain;
+	filter           : invert(1)
 }
 
 .slider.round {
-	border-radius: 34px;
+	border-radius : 34px;
 }
 
 .slider.round:before {
 	//border-radius: 50%;
 }
 
-.slider.round:before{
+.slider.round:before {
 }

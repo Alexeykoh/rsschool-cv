@@ -55,10 +55,12 @@
 				</div>
 				<h2 class="about__name title">Alexey <span>Kokhanovich</span></h2>
 				<h1 class="subtitle">Front-End Developer</h1>
-				<button class="button__email-me">
-					<span class="hidden__text">mail me</span>
-					<img src="assets/ico/mailme-ico.svg" alt="mailme-ico" class="mailme-img ico">
-				</button>
+				<a href = "mailto: alexeykoh@icloud.com">
+					<button class="button__email-me">
+						<span class="hidden__text">mail me</span>
+						<img src="assets/ico/mailme-ico.svg" alt="mailme-ico" class="mailme-img ico">
+					</button>
+				</a>
 			</div>
 			<p class="about__subscription">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur consequatur dignissimos
@@ -101,27 +103,27 @@
 			<h2 class="tittle">My projects</h2>
 			<div class="projects__inner">
 				<div class="pro-block">
-					<div class="pro-block__wrapper">
-						<img src="assets/img/projects/calc.png" alt="pro-block-img" class="pro-block__ing">
-						<p class="pro-block__title">calculator</p>
-					</div>
+					<a href="https://alexeykoh.github.io/BAZA-415/main/index.html">
+						<div class="pro-block__wrapper">
+							<img src="assets/img/projects/calc.png" alt="pro-block-img" class="pro-block__ing">
+							<p class="pro-block__title">calculator</p>
+						</div>
+					</a>
 					<p class="pro-block__description">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-						asperiores consequuntur, dignissimos error esse, est iusto molestias
-						nesciunt nihil nulla numquam odit omnis porro quae ratione saepe
-						similique, tempore temporibus.
+						asperiores consequuntur,
 					</p>
 				</div>
 				<div class="pro-block">
-					<div class="pro-block__wrapper even">
-						<img src="assets/img/projects/drums.png" alt="pro-block-img" class="pro-block__ing">
-						<p class="pro-block__title">drum player</p>
-					</div>
+					<a href="https://alexeykoh.github.io/drums/pages/main/index.html" class="even">
+						<div class="pro-block__wrapper">
+							<img src="assets/img/projects/drums.png" alt="pro-block-img" class="pro-block__ing">
+							<p class="pro-block__title">drum player</p>
+						</div>
+					</a>
 					<p class="pro-block__description">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-						asperiores consequuntur, dignissimos error esse, est iusto molestias
-						nesciunt nihil nulla numquam odit omnis porro quae ratione saepe
-						similique, tempore temporibus.
+						asperiores consequuntur, dignissimos error esse,
 					</p>
 				</div>
 			</div>
@@ -145,12 +147,10 @@
 	<section class="code-examples" id="code-examples">
 		<div class="container">
 			<h2 class="tittle">Code examples</h2>
-			<p class="code-examples__wrapper">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem facere hic illo, in
-				obcaecati
-				unde voluptas. Accusantium deserunt in magnam maiores maxime nemo nobis odit rerum vero. Distinctio,
-				illo?
-			</p>
+			<div class="code">
+				<pre class="code-examples__wrapper"><span class="ce_pink">const</span> <span class="ce_white">hamburger</span> <span class="ce_pink">=</span> <span class="ce_white">document</span><span class="ce_grey">.</span><span class="ce_green">querySelector</span><span class="ce_yel">('</span><span class="ce_grey">.</span><span class="ce_green">hamburger</span><span class="ce_yel">')</span><span class="ce_grey">;</span><br><span class="ce_pink">const</span> <span class="ce_white">navMenu</span> <span class="ce_pink">=</span> <span class="ce_white">document</span><span class="ce_grey">.</span><span class="ce_green">querySelector</span><span class="ce_yel">('</span><span class="ce_grey">.</span><span class="ce_green">nav__menu</span><span class="ce_yel">')</span><span class="ce_grey">;</span><br><br><span class="ce_white">hamburger</span><span class="ce_grey">.</span><span class="ce_green">addEventListener</span><span class="ce_yel">('</span><span class="ce_yel">click</span><span class="ce_yel">'</span><span class="ce_grey">,</span><span class="ce_blue">burger</span><span class="ce_yel">)</span><br><br><span class="ce_pink">function</span> <span class="ce_blue">burger</span> <span class="ce_yel">(){</span><br>    <span class="ce_white">hamburger</span><span class="ce_grey">.</span><span class="ce_white">classList</span><span class="ce_grey">.</span><span class="ce_green">toggle</span><span class="ce_yel">('active')</span><span class="ce_grey">;</span><br>    <span class="ce_white">navMenu</span><span class="ce_grey">.</span><span class="ce_white">classList</span><span class="ce_grey">.</span><span class="ce_green">toggle</span><span class="ce_yel">('active')</span><span class="ce_grey">;</span><br><span class="ce_yel">}</span>
+</pre>
+			</div>
 		</div>
 	</section>
 	
@@ -179,14 +179,16 @@
 						<img src="assets/ico/mail-ico.svg" alt="contact-ico" class="contact__ico ico">
 						<p>E-mail</p>
 					</div>
-					<div class="contact__description"><p>alexeykoh@icloud.com</p></div>
+					<div class="contact__description">
+						<a href = "mailto: alexeykoh@icloud.com"><p>alexeykoh@icloud.com</p></a>
+					</div>
 				</div>
 				<div class="contact__wrapper">
 					<div class="contact__title">
 						<img src="assets/ico/git-ico.svg" alt="contact-ico" class="contact__ico ico">
 						<p>GitHub</p>
 					</div>
-					<div class="contact__description"><p>GitHub Account</p></div>
+					<div class="contact__description"><a href="https://github.com/Alexeykoh">alexeykoh</a></div>
 				</div>
 			</div>
 		</div>

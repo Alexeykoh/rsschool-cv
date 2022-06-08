@@ -27,6 +27,14 @@ $maxWidth           : 1280;
 	//
 	--code-color         : black;
 	--code-color_bg      : #E4CB9D;
+	
+	// code colors
+	--pnk                : #d1f7fd;
+	--grey               : #3a3a3a;
+	--grn                : #278bad;
+	--yel                : #f3da9c;
+	--wht                : #494949;
+	--blu                : #543fd7;
 }
 
 [data-theme="dark"] {
@@ -49,4 +57,12 @@ $maxWidth           : 1280;
 	img.ico {
 		filter : invert(1)
 	}
+	
+	// code colors
+	--pnk                : #df597f;
+	--grey               : gray;
+	--grn                : #6fbf80;
+	--yel                : #fbe466;
+	--wht                : white;
+	--blu                : #5ad3e5;
 }
