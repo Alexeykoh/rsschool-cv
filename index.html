@@ -53,11 +53,11 @@
 				<div class="avatar">
 					<img src="assets/img/avatar.jpg" alt="" class="avatar__img">
 				</div>
-				<h1 class="about__name title">Alexey <span>Kokhanovich</span></h1>
-				<h2 class="subtitle">Front-End Developer</h2>
+				<h2 class="about__name title">Alexey <span>Kokhanovich</span></h2>
+				<h1 class="subtitle">Front-End Developer</h1>
 				<button class="button__email-me">
+					<span class="hidden__text">mail me</span>
 					<img src="assets/ico/mailme-ico.svg" alt="mailme-ico" class="mailme-img ico">
-					<p>mail me</p>
 				</button>
 			</div>
 			<p class="about__subscription">
@@ -72,10 +72,26 @@
 		<div class="container">
 			<h2 class="title">My skills</h2>
 			<ul class="skills__list">
-				<li class="skills__item">HTML, CSS (SCSS, SASS)</li>
-				<li class="skills__item">JavaScript</li>
-				<li class="skills__item">Figma</li>
-				<li class="skills__item">WebStorm, VSCode</li>
+				<li class="skills__item">
+					<img src="assets/ico/skills-ico/html-ico.svg" alt="">
+					<p>HTML</p>
+				</li>
+				<li class="skills__item">
+					<img src="assets/ico/skills-ico/css-ico.svg" alt="">
+					<p>CSS (SASS, SCSS)</p>
+				</li>
+				<li class="skills__item">
+					<img src="assets/ico/skills-ico/js-ico.svg" alt="">
+					<p>JavaScript</p>
+				</li>
+				<li class="skills__item">
+					<img src="assets/ico/skills-ico/figma-ico.svg" alt="">
+					<p>Figma</p>
+				</li>
+				<li class="skills__item">
+					<img src="assets/ico/skills-ico/ws-ico.svg" alt="">
+					<p>WebStorm</p>
+				</li>
 			</ul>
 		</div>
 	</section>
@@ -83,53 +99,31 @@
 	<section class="projects" id="projects">
 		<div class="container">
 			<h2 class="tittle">My projects</h2>
-			<div class="pro-block">
-				<div class="pro-block__wrapper">
-					<img src="" alt="pro-block-img" class="pro-block__ing">
-					<p class="pro-block__title">tittle</p>
+			<div class="projects__inner">
+				<div class="pro-block">
+					<div class="pro-block__wrapper">
+						<img src="assets/img/projects/calc.png" alt="pro-block-img" class="pro-block__ing">
+						<p class="pro-block__title">calculator</p>
+					</div>
+					<p class="pro-block__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+						asperiores consequuntur, dignissimos error esse, est iusto molestias
+						nesciunt nihil nulla numquam odit omnis porro quae ratione saepe
+						similique, tempore temporibus.
+					</p>
 				</div>
-				<p class="pro-block__description">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-					asperiores consequuntur, dignissimos error esse, est iusto molestias
-					nesciunt nihil nulla numquam odit omnis porro quae ratione saepe
-					similique, tempore temporibus.
-				</p>
-			</div>
-			<div class="pro-block">
-				<div class="pro-block__wrapper">
-					<img src="" alt="pro-block-img" class="pro-block__ing">
-					<p class="pro-block__title">tittle</p>
+				<div class="pro-block">
+					<div class="pro-block__wrapper even">
+						<img src="assets/img/projects/drums.png" alt="pro-block-img" class="pro-block__ing">
+						<p class="pro-block__title">drum player</p>
+					</div>
+					<p class="pro-block__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+						asperiores consequuntur, dignissimos error esse, est iusto molestias
+						nesciunt nihil nulla numquam odit omnis porro quae ratione saepe
+						similique, tempore temporibus.
+					</p>
 				</div>
-				<p class="pro-block__description">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-					asperiores consequuntur, dignissimos error esse, est iusto molestias
-					nesciunt nihil nulla numquam odit omnis porro quae ratione saepe
-					similique, tempore temporibus.
-				</p>
-			</div>
-			<div class="pro-block">
-				<div class="pro-block__wrapper">
-					<img src="" alt="pro-block-img" class="pro-block__ing">
-					<p class="pro-block__title">tittle</p>
-				</div>
-				<p class="pro-block__description">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-					asperiores consequuntur, dignissimos error esse, est iusto molestias
-					nesciunt nihil nulla numquam odit omnis porro quae ratione saepe
-					similique, tempore temporibus.
-				</p>
-			</div>
-			<div class="pro-block">
-				<div class="pro-block__wrapper">
-					<img src="" alt="pro-block-img" class="pro-block__ing">
-					<p class="pro-block__title">tittle</p>
-				</div>
-				<p class="pro-block__description">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-					asperiores consequuntur, dignissimos error esse, est iusto molestias
-					nesciunt nihil nulla numquam odit omnis porro quae ratione saepe
-					similique, tempore temporibus.
-				</p>
 			</div>
 		</div>
 	</section>
@@ -138,8 +132,12 @@
 		<div class="container">
 			<h2 class="tittle">Education</h2>
 			<ul class="education__list">
-				<li class="education__item">BELARUSIAN-RUSSIAN UNIVERSITY</li>
-				<li class="education__item">The Rolling Scopes</li>
+				<li class="education__item">
+					<img src="assets/ico/edu/bru-edu-ico.svg" alt="bru-ico" class="ico">
+					<p>BELARUSIAN-RUSSIAN UNIVERSITY</p></li>
+				<li class="education__item">
+					<img src="assets/ico/edu/rs_school_js.svg" alt="rss-ico" class="ico">
+					<p>The Rolling Scopes</p></li>
 			</ul>
 		</div>
 	</section>
@@ -147,11 +145,12 @@
 	<section class="code-examples" id="code-examples">
 		<div class="container">
 			<h2 class="tittle">Code examples</h2>
-			<div class="code-examples__wrapper">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem facere hic illo, in obcaecati
+			<p class="code-examples__wrapper">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem facere hic illo, in
+				obcaecati
 				unde voluptas. Accusantium deserunt in magnam maiores maxime nemo nobis odit rerum vero. Distinctio,
 				illo?
-			</div>
+			</p>
 		</div>
 	</section>
 	
@@ -209,7 +208,7 @@
 			</div>
 			<div class="footer__block">
 				<a href="https://rs.school/js/" class="footer__link">
-					<img src="assets/ico/rs_school_js.svg" alt="" class="footer__img ico" id="rss-ico">
+					<img src="assets/ico/edu/rs_school_js.svg" alt="" class="footer__img ico" id="rss-ico">
 				</a>
 			</div>
 		</div>

@@ -8,15 +8,19 @@
   --color-secondary: #B4AA99;
   --top_btn_color: #C34A36;
   --btn_color: #C34A36;
+  --code-color: black;
+  --code-color_bg: #E4CB9D;
 }
 
 [data-theme=dark] {
   --text-color: white;
   --color-primary_dark: #404046;
   --color-primary: #051937;
-  --color-secondary: #161625;
+  --color-secondary: #2e2e4d;
   --top_btn_color: #543fd7;
   --btn_color: #543fd7;
+  --code-color: white;
+  --code-color_bg: #2c2070;
 }
 [data-theme=dark] img {
   fill: white;
@@ -106,7 +110,11 @@ h1, h2, h3, h4, p, li, a, .nav__link {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3.5rem;
+}
+
+.even {
+  order: 1;
 }
 
 main section.about {
@@ -131,11 +139,7 @@ main section.about .about__inner {
 main section.about .about__inner button {
   transition: 0.3s;
 }
-main section.about .about__inner button:hover p {
-  display: block;
-  opacity: 100;
-}
-main section.about .about__inner button p {
+main section.about .about__inner button .hidden__text {
   font-size: 1.2rem;
   display: none;
   opacity: 0;
@@ -145,7 +149,7 @@ main section.about .about__inner button img {
   height: auto;
 }
 main section.about .about__subscription {
-  width: 55%;
+  width: 45%;
 }
 @media (max-width: 767px) {
   main section.about .about__subscription {
@@ -172,31 +176,154 @@ main section.about .avatar img.avatar__img {
 }
 main section.skills {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   background-color: var(--color-primary);
+}
+main section.skills .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+main section.skills .container h2 {
+  order: 1;
+}
+main section.skills .container .skills__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main section.skills .container .skills__list .skills__item {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+main section.skills .container .skills__list .skills__item img {
+  width: 50px;
 }
 main section.projects {
   width: 100%;
-  height: 200vh;
   background-color: var(--color-secondary);
+}
+main section.projects .tittle {
+  margin-top: 100px;
+}
+main section.projects .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+main section.projects .container .projects__inner {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+main section.projects .container .projects__inner .pro-block {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+main section.projects .container .projects__inner .pro-block .pro-block__description {
+  font-size: 2rem;
+  width: 30%;
+}
+main section.projects .container .projects__inner .pro-block .pro-block__wrapper {
+  position: relative;
+  width: 50em;
+}
+main section.projects .container .projects__inner .pro-block .pro-block__wrapper img {
+  border-radius: 50px;
+  width: 100%;
+  background-color: var(--color-primary);
+}
+main section.projects .container .projects__inner .pro-block .pro-block__wrapper .pro-block__title {
+  position: absolute;
+  margin: 0;
+  z-index: 10;
+  bottom: 5%;
+  right: 5%;
+  font-size: 2rem;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  color: white;
+  background-color: var(--color-primary_dark);
+  padding: 10px 20px 10px 20px;
+  border-radius: 50px;
 }
 main section.education {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   background-color: var(--color-primary);
+}
+main section.education .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+main section.education .container h2 {
+  order: 0;
+}
+main section.education .container .education__list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+main section.education .container .education__list .education__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+main section.education .container .education__list .education__item img {
+  width: 100px;
+}
+main section.education .container .education__list .education__item p {
+  font-size: 2rem;
 }
 main section.code-examples {
   width: 100%;
   height: 100vh;
   background-color: var(--color-secondary);
 }
+main section.code-examples .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+main section.code-examples .container h2 {
+  order: 1;
+}
+main section.code-examples .container p {
+  color: var(--code-color);
+}
+main section.code-examples .container .code-examples__wrapper {
+  width: 45%;
+  font-size: 2rem;
+  background-color: var(--code-color_bg);
+  padding: 50px;
+  border-radius: 5px;
+}
 main section.contacts {
   width: 100%;
   height: 50vh;
   background-color: var(--color-primary);
-}
-main section.contacts h2 {
-  font-size: 5rem;
 }
 main section.contacts .container {
   display: flex;
@@ -229,7 +356,7 @@ header {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
   overflow: hidden;
   z-index: 100;
 }
@@ -288,6 +415,10 @@ button:active {
 }
 button:hover {
   background: #FF8066;
+}
+
+button.button__email-me {
+  color: #161625;
 }
 
 span.top__span {

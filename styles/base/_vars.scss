@@ -24,6 +24,9 @@ $maxWidth           : 1280;
 	//
 	--top_btn_color      : #C34A36;
 	--btn_color          : #C34A36;
+	//
+	--code-color         : black;
+	--code-color_bg      : #E4CB9D;
 }
 
 [data-theme="dark"] {
@@ -31,15 +34,19 @@ $maxWidth           : 1280;
 	//
 	--color-primary_dark : #404046;
 	--color-primary      : #051937;
-	--color-secondary    : #161625;
+	--color-secondary    : #2e2e4d;
 	//
 	--top_btn_color      : #543fd7;
 	--btn_color          : #543fd7;
+	//
+	--code-color         : white;
+	--code-color_bg      : #2c2070;
 	
 	img {
 		fill : white;
 	}
-	img.ico{
-		filter: invert(1)
+	
+	img.ico {
+		filter : invert(1)
 	}
 }
