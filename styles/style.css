@@ -677,7 +677,7 @@ span.top__span.active button img {
   position: absolute;
   transition: 0.4s;
   width: 26px;
-  background-image: url("../../assets/ico/light_mod-ico.svg");
+  background-image: url("../../assets/ico/lm-ico.svg");
   background-size: contain;
 }
 
@@ -687,7 +687,7 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(26px);
-  background-image: url("../../assets/ico/dark_mod-ico.svg");
+  background-image: url("../../assets/ico/dm-ico.svg");
   background-size: contain;
   filter: invert(1);
 }
@@ -718,6 +718,10 @@ input:checked + .slider:before {
 
 .ce_grey {
   color: var(--grey);
+}
+
+nav .theme__toggle img {
+  width: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */

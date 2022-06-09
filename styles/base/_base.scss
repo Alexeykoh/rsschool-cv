@@ -14,7 +14,7 @@
 html {
 	background-color : white;
 	font-family      : "Comfortaa", cursive;
-	transition: .5s;
+	transition       : .5s;
 }
 
 body {
@@ -30,15 +30,14 @@ ol, ul {
 }
 
 button {
-	cursor : pointer;
-	background-color: var(--btn_color);
+	cursor           : pointer;
+	background-color : var(--btn_color);
 }
 
 img, svg {
 	max-width : 100%;
 	height    : auto;
 }
-
 
 // hidden elements
 .hidden {
@@ -74,7 +73,7 @@ img, svg {
 	display : grid;
 }
 
-h1, h2, h3, h4, p, li, a, .nav__link{
+h1, h2, h3, h4, p, li, a, .nav__link {
 	padding : 0;
 	margin  : 0;
 	color   : var(--text-color);
@@ -85,6 +84,6 @@ h2 {
 	@include adaptive-font(56, 32)
 }
 
-.even{
-	order: 1
+.even {
+	order : 1
 }
