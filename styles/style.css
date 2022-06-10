@@ -720,6 +720,9 @@ input:checked + .slider:before {
   color: var(--grey);
 }
 
+nav .theme__toggle {
+  transition: 0.5s;
+}
 nav .theme__toggle img {
   width: 35px;
 }
