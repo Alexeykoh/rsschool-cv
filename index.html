@@ -8,7 +8,8 @@
 	>
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="styles/style.css">
-	<title>Document</title>
+	<title>Alexey Kohanovich. CV</title>
+	<link rel="icon" type="image/x-icon" href="assets/ico/favicon_1.svg">
 </head>
 <body>
 
@@ -21,13 +22,9 @@
 	<div class="container">
 		<nav class="nav">
 			<span class="theme__toggle">
-<!--				<img src="assets/ico/light_mod-ico.svg" alt="" class="theme__button">-->
-				<span class="theme-switch-wrapper">
-					<label class="theme-switch" for="checkbox">
-						<input type="checkbox" id="checkbox"/>
-						<span class="slider round"></span>
-					</label>
-				</span>
+				<img src="assets/ico/lm-ico.svg" alt="theme-ico-light" class="theme__button " id="theme__light">
+				<img src="assets/ico/dm-ico.svg" alt="theme-ico-dark" class="theme__button hidden" id="theme__dark">
+
 			</span>
 			
 			<ul class="nav__menu">
@@ -60,11 +57,14 @@
 				</button>
 			</div>
 			<p class="about__subscription">
-				Hi! <br> <br> I am a pre-junior Front-End developer from Belarus. I am currently studying at <br> <span ><a href="#education" class="ce_blue">The Rolling Scopes School</a></span>
+				Hi! <br> <br> I am a pre-junior Front-End developer from Belarus. I am currently studying at <br> <span><a
+					href="#education"
+					class="ce_blue"
+			>The Rolling Scopes School</a></span>
 				<br> and will soon be ready to perform tasks of any complexity.
 				<br> <br>
 				I also have experience with sound mixing and music production.
-				
+			
 			</p>
 		</div>
 	</section>
@@ -114,11 +114,12 @@
 					</a>
 					<p class="pro-block__description">
 						My first project - <span class="ce_blue">Calculator</span>! <br><br>
-						A small, cartoon-like calculator that can calculate simple expressions. It is possible to delete the entered characters by clicking on the calculator screen.
+						A small, cartoon-like calculator that can calculate simple expressions. It is possible to delete
+						the entered characters by clicking on the calculator screen.
 					</p>
 				</div>
 				<div class="pro-block">
-					<a href="https://alexeykoh.github.io/drums/pages/main/index.html" class="block__pro even">
+					<a href="https://alexeykoh.github.io/drums/pages/drums_live/index.html" class="block__pro even">
 						<div class="pro-block__wrapper">
 							<img src="assets/img/projects/drums.png" alt="pro-block-img" class="pro-block__ing">
 							<p class="pro-block__title">drum player</p>
@@ -127,7 +128,8 @@
 					<p class="pro-block__description">
 						Ba-dum-tsss!!!<br><br>
 						These are <span class="ce_blue">Drums</span>!<br>
-						You can play your favorite song (not difficult, of course) directly on the site. It is possible to adjust the volume for each drum separately.
+						You can play your favorite song (not difficult, of course) directly on the site. It is possible
+						to adjust the volume for each drum separately.
 					</p>
 				</div>
 			</div>
@@ -152,7 +154,31 @@
 		<div class="container">
 			<h2 class="tittle">Code examples</h2>
 			<div class="code">
-				<pre class="code-examples__wrapper"><span class="ce_pink">const</span> <span class="ce_white">hamburger</span> <span class="ce_pink">=</span> <span class="ce_white">document</span><span class="ce_grey">.</span><span class="ce_green">querySelector</span><span class="ce_yel">('</span><span class="ce_grey">.</span><span class="ce_green">hamburger</span><span class="ce_yel">')</span><span class="ce_grey">;</span><br><span class="ce_pink">const</span> <span class="ce_white">navMenu</span> <span class="ce_pink">=</span> <span class="ce_white">document</span><span class="ce_grey">.</span><span class="ce_green">querySelector</span><span class="ce_yel">('</span><span class="ce_grey">.</span><span class="ce_green">nav__menu</span><span class="ce_yel">')</span><span class="ce_grey">;</span><br><br><span class="ce_white">hamburger</span><span class="ce_grey">.</span><span class="ce_green">addEventListener</span><span class="ce_yel">('</span><span class="ce_yel">click</span><span class="ce_yel">'</span><span class="ce_grey">,</span><span class="ce_blue">burger</span><span class="ce_yel">)</span><br><br><span class="ce_pink">function</span> <span class="ce_blue">burger</span> <span class="ce_yel">(){</span><br>    <span class="ce_white">hamburger</span><span class="ce_grey">.</span><span class="ce_white">classList</span><span class="ce_grey">.</span><span class="ce_green">toggle</span><span class="ce_yel">('active')</span><span class="ce_grey">;</span><br>    <span class="ce_white">navMenu</span><span class="ce_grey">.</span><span class="ce_white">classList</span><span class="ce_grey">.</span><span class="ce_green">toggle</span><span class="ce_yel">('active')</span><span class="ce_grey">;</span><br><span class="ce_yel">}</span>
+				<pre class="code-examples__wrapper"><span class="ce_pink">const</span> <span class="ce_white">hamburger</span> <span
+						class="ce_pink"
+				>=</span> <span class="ce_white">document</span><span class="ce_grey">.</span><span class="ce_green">querySelector</span><span
+						class="ce_yel"
+				>('</span><span class="ce_grey">.</span><span class="ce_green">hamburger</span><span class="ce_yel">')</span><span
+						class="ce_grey"
+				>;</span><br><span class="ce_pink">const</span> <span class="ce_white">navMenu</span> <span class="ce_pink">=</span> <span
+						class="ce_white"
+				>document</span><span class="ce_grey">.</span><span class="ce_green">querySelector</span><span class="ce_yel">('</span><span
+						class="ce_grey"
+				>.</span><span class="ce_green">nav__menu</span><span class="ce_yel">')</span><span class="ce_grey">;</span><br><br><span
+						class="ce_white"
+				>hamburger</span><span class="ce_grey">.</span><span class="ce_green">addEventListener</span><span class="ce_yel">('</span><span
+						class="ce_yel"
+				>click</span><span class="ce_yel">'</span><span class="ce_grey">,</span><span class="ce_blue">burger</span><span
+						class="ce_yel"
+				>)</span><br><br><span class="ce_pink">function</span> <span class="ce_blue">burger</span> <span class="ce_yel">(){</span><br>    <span
+						class="ce_white"
+				>hamburger</span><span class="ce_grey">.</span><span class="ce_white">classList</span><span class="ce_grey">.</span><span
+						class="ce_green"
+				>toggle</span><span class="ce_yel">('active')</span><span class="ce_grey">;</span><br>    <span class="ce_white">navMenu</span><span
+						class="ce_grey"
+				>.</span><span class="ce_white">classList</span><span class="ce_grey">.</span><span class="ce_green">toggle</span><span
+						class="ce_yel"
+				>('active')</span><span class="ce_grey">;</span><br><span class="ce_yel">}</span>
 </pre>
 			</div>
 		</div>
@@ -184,7 +210,7 @@
 						<p>E-mail</p>
 					</div>
 					<div class="contact__description">
-						<a href = "mailto:alexeykoh@icloud.com"><p>alexeykoh@icloud.com</p></a>
+						<a href="mailto:alexeykoh@icloud.com"><p>alexeykoh@icloud.com</p></a>
 					</div>
 				</div>
 				<div class="contact__wrapper">
