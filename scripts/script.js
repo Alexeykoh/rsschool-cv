@@ -54,39 +54,40 @@ function sendMail () {
 
 // toggle theme (new)
 const currentTheme = localStorage.getItem ('theme');
-const lightTheme = document.getElementById('theme__light')
-const darkTheme = document.getElementById('theme__dark')
+const lightTheme   = document.getElementById ('theme__light')
+const darkTheme    = document.getElementById ('theme__dark')
 
-lightTheme.addEventListener('click', darkTh)
-darkTheme.addEventListener('click', lightTh)
+lightTheme.addEventListener ('click', darkTh)
+darkTheme.addEventListener ('click', lightTh)
 
-if (currentTheme === 'dark'){
-	darkTheme.classList.remove('hidden')
-	lightTheme.classList.add('hidden')
+if (currentTheme === 'dark') {
+	darkTheme.classList.remove ('hidden')
+	lightTheme.classList.add ('hidden')
 	//
 	document.documentElement.setAttribute ('data-theme', 'dark');
 	localStorage.setItem ('theme', 'dark');
 } else {
-	darkTheme.classList.add('hidden')
-	lightTheme.classList.remove('hidden')
+	darkTheme.classList.add ('hidden')
+	lightTheme.classList.remove ('hidden')
 	//
 	document.documentElement.setAttribute ('data-theme', 'light');
 	localStorage.setItem ('theme', 'light');
 }
 
-	function darkTh(){
-	if (localStorage.getItem ('theme') === 'light'){
-		darkTheme.classList.remove('hidden')
-		lightTheme.classList.add('hidden')
+function darkTh () {
+	if (localStorage.getItem ('theme') === 'light') {
+		darkTheme.classList.remove ('hidden')
+		lightTheme.classList.add ('hidden')
 		//
 		document.documentElement.setAttribute ('data-theme', 'dark');
 		localStorage.setItem ('theme', 'dark');
 	}
 }
-function lightTh(){
-	if (localStorage.getItem ('theme') === 'dark'){
-		darkTheme.classList.add('hidden')
-		lightTheme.classList.remove('hidden')
+
+function lightTh () {
+	if (localStorage.getItem ('theme') === 'dark') {
+		darkTheme.classList.add ('hidden')
+		lightTheme.classList.remove ('hidden')
 		//
 		document.documentElement.setAttribute ('data-theme', 'light');
 		localStorage.setItem ('theme', 'light');
