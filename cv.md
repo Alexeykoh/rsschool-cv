@@ -7,3 +7,11 @@
 ![image](https://alexeykoh.github.io/OpenToWork/assets/images/photo.jpg)
 
 ---
+
+
+## Contacts
+
+-   Discord: @mezabizon
+-   E_mail: alexeykoh@gmail.com
+
+---
