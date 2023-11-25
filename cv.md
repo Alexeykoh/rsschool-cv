@@ -36,3 +36,29 @@ In development I use tools such as React/Angular, Typescript, Redux/NGRX, Axios,
 
 
 ---
+
+## Code exaple
+
+```
+find({ selector, element }) {
+		const findElement = element
+			? element.querySelector(selector)
+			: document.querySelector(selector);
+		if (!findElement) {
+			throw new Error(
+				"JsElementCoreError: Element not found: " + selector
+			);
+		}
+		return findElement;
+	}
+```
+
+---
+
+
+## Languages
+
+-   _Russian(Native)_
+-   _English(B1)_
+
+---
