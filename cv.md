@@ -24,3 +24,15 @@ Frontend Developer with one year of experience in leveraging JavaScript framewor
 In development I use tools such as React/Angular, Typescript, Redux/NGRX, Axios, SCSS/Tailwind, Node.js, Express.js, Webpack, ESLint, Git. Currently I am in the position of junior developer.
 
 ---
+
+## Skills
+
+-   HTML
+-   CSS/SCSS/Tailwind
+-   JS/TS
+-   React/Redux
+-   Angular/NGRX
+-   Node.js/Express
+
+
+---
